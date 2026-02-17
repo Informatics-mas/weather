@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <title>weather app</title>
+    </head>
+
+    <body>
+        <header>
+            <span style="display: flex; width: 140px;">Weather App <img src="./assets/Sunny.svg" alt=""
+                    style="width: 50px; height: 50px; margin-left: 10px;"></span>
+            <div class="midle">
+                <input type="search" name="search" id="search" placeholder="Search for an city weather ...">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <h1 id="city-name"></h1>
+        </header>
+        <section class="content">
+            <div class="weather-info">
+                <div class="temperature">
+                    <div class="ctn">
+                        <span id="temp-value">--</span>
+                        <span id="temp-values">--</span>
+                        <i id="weather-icon" class="fa-solid"></i>
+                    </div>
+                    <div class="description" id="weather-description">--</div>
+                </div>
+                <div class="detail-item">
+                    <strong>Vent :</strong> <br>
+                    <span id="wind-kmh">--</span> km/h (<span id="wind-mph">--</span> mph) <br>
+                    <i id="wind-icon" class="fa-solid fa-wind"></i>
+                </div>
+                <div class="detail-item">
+                    <strong>Précipitations :</strong> <br>
+                    <span id="precip-mm">--</span> mm (<span id="precip-in">--</span> pouces) <br>
+                    <i id="wind-icon" class="fa-solid fa-cloud-rain"></i>
+                </div>
+                <div class="detail-item">
+                    <strong>Visibilité :</strong> <br>
+                    <span id="vis-km">--</span> km (<span id="vis-mi">--</span> miles) <br>
+                    <i id="wind-icon" class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+            <div id="forecast-container" class="forecast-grid">
+            </div>
+        </section>
+    </body>
+
+</html>
