@@ -146,3 +146,118 @@ header {
 .forecast-temp {
     font-size: 0.9rem;
 }
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* TABLETTE */
+@media screen and (max-width: 1024px) {
+
+    #search {
+        width: 300px;
+    }
+
+    .weather-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .ctn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .forecast-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .forecast-card {
+        flex: 0 0 45%;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #search-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .weather-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .temperature {
+        width: 100%;
+        text-align: center;
+    }
+
+    .detail-item {
+        width: 100%;
+    }
+
+    .forecast-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .forecast-card {
+        width: 100%;
+    }
+
+    #weather-icon {
+        font-size: 80px;
+    }
+
+    #wind-icon {
+        font-size: 70px;
+    }
+
+    .ctn {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+
+/* PETIT MOBILE */
+@media screen and (max-width: 480px) {
+
+    #weather-icon {
+        font-size: 65px;
+    }
+
+    #wind-icon {
+        font-size: 55px;
+    }
+
+    .ctn {
+        font-size: 18px;
+    }
+
+    .forecast-date,
+    .forecast-temp {
+        font-size: 0.8rem;
+    }
+
+}
