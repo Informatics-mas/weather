@@ -159,7 +159,7 @@ header {
     }
 
     .weather-info {
-        flex-direction: column;
+        flex-direction: flex;
         gap: 20px;
         text-align: center;
     }
@@ -190,12 +190,12 @@ header {
     }
 
     #search {
-        width: 100%;
+        width: 85%;
         max-width: 100%;
     }
 
     #search-button {
-        width: 100%;
+        width: 10%;
         margin-top: 10px;
     }
 
@@ -219,7 +219,7 @@ header {
     }
 
     .forecast-card {
-        width: 100%;
+        width: 95%;
     }
 
     #weather-icon {
